@@ -84,7 +84,7 @@ module.exports = {
         if (matches && matches.length > 0) {
             const parentComment = await reddit.getComment(comment.parent_id).fetch();
             const parentAuthor = parentComment.author.name;
-            console.log(`Ignore command found for '${comment.author.name}'`);
+            console.log(`Ignore command found for '${comment.author.name}' in response to '${parentAuthor}'`);
             return { ignored: parentAuthor === process.env.REDDIT_USER, comment: comment };
         }
 

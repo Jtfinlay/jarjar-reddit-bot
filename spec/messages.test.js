@@ -85,6 +85,18 @@ describe('messages and responses', () => {
         expect(message).not.toBeNull();
     });
 
+    it('should reply to keyword of JarJar', () => {
+        let comment = {
+            body: 'JarJar',
+            author: {
+                name: 'user_12334545'
+            }
+        };
+
+        let message = messages.extractReply(comment);
+        expect(message).not.toBeNull();
+    });
+
     it('should reply to Anakin and ignore the footer', () => {
         let comment = {
             body: "She didn't even recognise me, Jar Jar. I thought about her every day since we parted... and she's forgotten me completely. comment !ignore to mute me",

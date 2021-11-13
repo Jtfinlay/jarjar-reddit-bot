@@ -34,6 +34,12 @@
             ]
         },
         {
+            "pattern": "may the force be with you[.]?$",
+            "responses": [
+                "Ooooh, maxibig...\"da Force\"...Wellen, dat smells stinkowiff."
+            ]
+        },
+        {
             "pattern": "poof[.!]?$",
             "responses": [
                 "How wude."
@@ -57,8 +63,15 @@
                 "/u/$username! Yiyiyiyiyiyi!!!"
             ]
         },
+        
         {
-            "pattern": "Jar Jar",
+            "pattern": "Kill The Jedi[.!]?$",
+            "responses": [
+                "Meesa not a Jedi! Ah! Forget surrender, weesa run!"
+            ]
+        },
+        {
+            "pattern": "Jar ?Jar",
             "responses": [
                 "Oyi, mooie-mooie! I luv yous!",
                 "Say what? Oh, nooooo! Weesa ganna die!",
