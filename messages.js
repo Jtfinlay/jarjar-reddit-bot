@@ -1,12 +1,17 @@
 const responses = require('./responses.json');
 
+const STRIP_FROM_MESSAGES = [" comment !ignore to mute me"];
 const IGNORE_PATTERN = "^!ignore$";
 const KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot"];
 const groupMatchRegex = /\$(\d*)/gi;
 
 function extractMessage(comment, resp) {
     let regex = new RegExp(resp.pattern, 'gi');
-    let matches = regex.exec(comment.body);
+    let text = comment.body;
+    STRIP_FROM_MESSAGES.forEach(msg => text = text.replace(msg, ""));
+    text = text.trim();
+
+    let matches = regex.exec(text);
     let message = null;
 
     if (matches && matches.length > 0) {

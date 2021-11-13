@@ -85,6 +85,18 @@ describe('messages and responses', () => {
         expect(message).not.toBeNull();
     });
 
+    it('should reply to Anakin and ignore the footer', () => {
+        let comment = {
+            body: "She didn't even recognise me, Jar Jar. I thought about her every day since we parted... and she's forgotten me completely. comment !ignore to mute me",
+            author: {
+                name: 'Anakin_Skywalker_Bot'
+            }
+        };
+
+        let message = messages.extractReply(comment);
+        expect(message).toEqual("Shesa happy. Happier den meesa see-en her in longo time.");
+    });
+
     it('should not reply to itself', () => {
         let comment = {
             body: `It's over Jar Jar, I have the high ground!`,

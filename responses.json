@@ -9,8 +9,8 @@
         {
             "pattern": "The ability to speak does not make you intelligent[.!]?$",
             "responses": [
-                "No...no! Mesa stay...Mesa yous humble servaunt.",
-                "No...no! Mesa stay...Mesa yous humble servaunt, /u/$username.",
+                "No...no! Meesa stay...Meesa yous humble servaunt.",
+                "No...no! Meesa stay...Meesa yous humble servaunt, /u/$username.",
                 "Oyi, mooie-mooie!",
                 "How wude!"
             ]
@@ -42,13 +42,13 @@
         {
             "pattern": "and she's forgotten me completely[.!]?$",
             "responses": [
-                "Shesa happy. Happier den mesa see-en her in longo time."
+                "Shesa happy. Happier den meesa see-en her in longo time."
             ]
         },
         {
             "pattern": "I kn[oe]w I (can|could) count on you[.!]?$",
             "responses": [
-                "Mesa honored to be taking on dissa heavy burden. Mesa accept this with muy, muy humility and, uh--"
+                "Meesa honored to be taking on dissa heavy burden. Meesa accept this with muy, muy humility and, uh--"
             ]
         },
         {
@@ -65,22 +65,22 @@
                 "Ex-squeeze me, but da moto grande safe place would be Otoh Gunga. Tis where I grew up... Tis safe city.",
                 "Wesa goen underwater, okeyday? My warning yous. Gungans no liken outlaunders. Don't expict a wern welcome.",
                 "Daza setten yous up. Goen through da planet core is bad bombin!!",
-                "Count mesa outta dis! Better dead here, den deader in da core...Yee guds, whata mesa sayin?!",
+                "Count meesa outta dis! Better dead here, den deader in da core...Yee guds, whata meesa sayin?!",
                 "What yet? Monstairs out dare! Leak'n in here, all'n sink'n, and nooooo power! You nutsen! WHEN YOUSA TINK WESA IN TROUBLE?!!!?",
-                "Mesa day starten pitty okeyday witda brisky morning munchen. Den boom....getten berry skeered, un grabbed dat Jedi, and before mesa knowen it...pow! Mesa here. ...getten berry berry skeered.",
-                "Who, mesa?",
+                "Meesa day starten pitty okeyday witda brisky morning munchen. Den boom....getten berry skeered, un grabbed dat Jedi, and before meesa knowen it...pow! Meesa here. ...getten berry berry skeered.",
+                "Who, meesa?",
                 "Gungans do die'n without a fight.... wesa warriors. Wesa gotta grand army. Dat why you no liken us, metinks.",
-                "Mesa, Your Highness?",
-                "It's-a clear desa separatists made a pact wesa desa Federation du Trade. Senators, dellow felegates. In response to the direct threat to the Republic, mesa propose that the Senate gives immediately emergency powers to the Supreme Chancellor.",
-                "Mesa called Jar Jar Binks, mesa your humble servant!",
+                "Meesa, Your Highness?",
+                "It's-a clear desa separatists made a pact wesa desa Federation du Trade. Senators, dellow felegates. In response to the direct threat to the Republic, meesa propose that the Senate gives immediately emergency powers to the Supreme Chancellor.",
+                "Meesa called Jar Jar Binks, meesa your humble servant!",
                 "Oh yousa no creating life. Yousa taking life. Yousa poisoned the gungan water.",
                 "Tis embarrassing, but, uh my afraid my’ve been banished. My forgotten, da bosses would do terrible tings to me. Terrible tings to me if me goen back dare.",
-                "Mesa just sharing my Gungan art with yousa and mesa.",
-                "Mesa won't let you down, senator.",
+                "Meesa just sharing my Gungan art with yousa and meesa.",
+                "Meesa won't let you down, senator.",
                 "Careful, Ani. Careful, Ani!",
                 "Thosen with good in their heart always passen too soon.",
                 "Helloo /u/$username. Good en to see yousa...",
-                "Mesa busten wit happiness seein Yousa again, /u/$username. Deesa bad times, bombad times."
+                "Meesa busten wit happiness seein Yousa again, /u/$username. Deesa bad times, bombad times."
             ]
         }
     ]
