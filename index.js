@@ -1,8 +1,11 @@
 require('dotenv').config();
 
+const fs = require('fs');
 const Snoowrap = require('snoowrap');
 const Snoostorm = require('snoostorm');
 const messages = require('./messages');
+
+const IGNORE_FILE = 'ignore-list.txt';
 
 const reddit = new Snoowrap({
     userAgent: process.env.REDDIT_USER_AGENT,
@@ -19,14 +22,22 @@ const stream = client.CommentStream({
     results: 100
 });
 
-//Keep track of everything we have commented on, if we
-//find a reply to one of our comments we can check for a reply.
-let commentIds = []; //TODO: This technique could be better I suppose.
+const ignoredUsers = fs.readFileSync(IGNORE_FILE).toString().split('\n');
+ignoredUsers.forEach(u => console.log(u));
 
 stream.on('comment', comment => {
     console.log('process comment');
-    //Go through each possible response and look for a match.
-    const reply = messages.extractReply(comment, commentIds);
+
+    if (ignoredUsers.includes(comment.author.name)) {
+        return null;
+    }
+
+    if (messages.checkIfIgnoreCommand(comment, reddit)) {
+        ignoredUsers.push(comment.author.name);
+        fs.appendFile(IGNORE_FILE, comment.author.name, function (err) { if (err) console.error("Could not write the ignore!")});
+    }
+
+    const reply = messages.extractReply(comment);
 
     if (!reply) {
         return;

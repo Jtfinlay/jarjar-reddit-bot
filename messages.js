@@ -1,6 +1,7 @@
 const responses = require('./responses.json');
-const ignoreList = require('./ignore-list.json');
 
+const IGNORE_PATTERN = "^!ignore$";
+const KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot"];
 const groupMatchRegex = /\$(\d*)/gi;
 
 function extractMessage(comment, resp) {
@@ -39,7 +40,11 @@ function extractMessage(comment, resp) {
 
     //Check if the message contains any keywords.
     if (message && message.indexOf('$username') > -1) {
-        message = message.replace('$username', comment.author.name);
+        if (KNOWN_BOTS.includes('$username')) {
+            message = message.replace('$username', 'Master');
+        } else {
+            message = message.replace('$username', comment.author.name);
+        }
     }
 
     return message;
@@ -47,19 +52,6 @@ function extractMessage(comment, resp) {
 
 function getRandomArrayItem(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
-}
-
-function replaceSpaces(text) {
-    return text.replace(new RegExp(' ', 'g'), '&#32;');
-}
-
-function findAndExtractReply(comment, replies) {
-    for (let i = 0; i < replies.length; i++) {
-        let resp = replies[i];
-        if (comment.author.name === resp.user) {
-            return getRandomArrayItem(resp.responses);
-        }
-    }
 }
 
 function findAndExtractMessage(comment, arr) {
@@ -81,6 +73,16 @@ function hasReplied(comments) {
 
 module.exports = {
 
+    checkIfIgnoreCommand(comment, reddit) {
+        let regex = new RegExp(IGNORE_PATTERN, 'gi');
+        let matches = regex.exec(comment.body);
+        if (matches && matches.length > 0) {
+            const parentAuthor = reddit.getComment(comment.parent_id).author.name;
+            console.log(`Ignore command found for '${parentAuthor}'`);
+            return parentAuthor === process.env.REDDIT_USER;
+        }
+    },
+
     extractReply(comment) {
         //make sure we're not replying to ourselves.
         if (comment.author.name === process.env.REDDIT_USER) {
@@ -92,15 +94,7 @@ module.exports = {
             return null;
         }
 
-        if (ignoreList.users.includes(comment.author.name)) {
-            return null;
-        }
-
-        let message = null;
-
-        //Try and find a response to a message.
-        message = findAndExtractMessage(comment, responses.messages);
-        return message;
+        return findAndExtractMessage(comment, responses.messages);
     }
 
 };
