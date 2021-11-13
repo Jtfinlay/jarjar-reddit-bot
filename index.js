@@ -34,7 +34,7 @@ stream.on('comment', comment => {
 
     if (messages.checkIfIgnoreCommand(comment, reddit)) {
         ignoredUsers.push(comment.author.name);
-        fs.appendFile(IGNORE_FILE, comment.author.name, function (err) { if (err) console.error("Could not write the ignore!")});
+        fs.appendFile(IGNORE_FILE, comment.author.name, function (err) { if (err) console.error(`Could not write '${comment.author.name}' to the ignore!`)});
     }
 
     const reply = messages.extractReply(comment);
@@ -46,15 +46,15 @@ stream.on('comment', comment => {
     console.log(`Found message: ${comment.body}`);
     console.log(`Responding with: ${reply}`);
 
-    // comment.reply(reply)
-    //     .then(resp => {
-    //         console.log(`Responded to message.`);
+    comment.reply(reply)
+        .then(resp => {
+            console.log(`Responded to message.`);
 
-    //         //Add the comment id to the array, we'll use it to
-    //         //check if a user has replied to one of our comments.
-    //         commentIds.push('t1_' + resp.id);
-    //     })
-    //     .catch(err => {
-    //         console.error(err);
-    //     });
+            //Add the comment id to the array, we'll use it to
+            //check if a user has replied to one of our comments.
+            commentIds.push('t1_' + resp.id);
+        })
+        .catch(err => {
+            console.error(err);
+        });
 });
