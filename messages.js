@@ -73,14 +73,17 @@ function hasReplied(comments) {
 
 module.exports = {
 
-    checkIfIgnoreCommand(comment, reddit) {
+    async checkIfIgnoreCommand(comment, reddit) {
         let regex = new RegExp(IGNORE_PATTERN, 'gi');
         let matches = regex.exec(comment.body);
         if (matches && matches.length > 0) {
-            const parentAuthor = reddit.getComment(comment.parent_id).author.name;
-            console.log(`Ignore command found for '${parentAuthor}'`);
-            return parentAuthor === process.env.REDDIT_USER;
+            const parentComment = await reddit.getComment(comment.parent_id).fetch();
+            const parentAuthor = parentComment.author.name;
+            console.log(`Ignore command found for '${comment.author.name}'`);
+            return { ignored: parentAuthor === process.env.REDDIT_USER, comment: comment };
         }
+
+        return Promise.resolve({ ignored: false, comment: comment });
     },
 
     extractReply(comment) {

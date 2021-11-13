@@ -1,13 +1,13 @@
 {
     "messages": [
         {
-            "pattern": "Are you brainless\\?[ You almost got us killed!?]?$",
+            "pattern": "Are you brainless\\?( You almost got us killed!?)?$",
             "responses": [
                 "I spake."
             ]
         },
         {
-            "pattern": "The ability to speak does not make you intelligent(.!)?$",
+            "pattern": "The ability to speak does not make you intelligent[.!]?$",
             "responses": [
                 "No...no! Mesa stay...Mesa yous humble servaunt.",
                 "No...no! Mesa stay...Mesa yous humble servaunt, /u/$username.",
@@ -22,7 +22,7 @@
             ]
         },
         {
-            "pattern": "blast us into oblivion(.!)?$",
+            "pattern": "blast us into oblivion[.!]?$",
             "responses": [
                 "Oh! Yousa point is well seen. Dis way! Hurry!"
             ]
@@ -34,25 +34,25 @@
             ]
         },
         {
-            "pattern": "poof(.!)?$",
+            "pattern": "poof[.!]?$",
             "responses": [
                 "How wude."
             ]
         },
         {
-            "pattern": "and she's forgotten me completely(.!)?$",
+            "pattern": "and she's forgotten me completely[.!]?$",
             "responses": [
                 "Shesa happy. Happier den mesa see-en her in longo time."
             ]
         },
         {
-            "pattern": "I know I can count on you(.!)?$",
+            "pattern": "I kn[oe]w I (can|could) count on you[.!]?$",
             "responses": [
                 "Mesa honored to be taking on dissa heavy burden. Mesa accept this with muy, muy humility and, uh--"
             ]
         },
         {
-            "pattern": "(Hi|Hello),? Jar Jar(.!)?$",
+            "pattern": "(Hi|Hello),? Jar Jar[.!]?$",
             "responses": [
                 "/u/$username! Yiyiyiyiyiyi!!!"
             ]

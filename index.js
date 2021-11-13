@@ -32,10 +32,12 @@ stream.on('comment', comment => {
         return null;
     }
 
-    if (messages.checkIfIgnoreCommand(comment, reddit)) {
-        ignoredUsers.push(comment.author.name);
-        fs.appendFile(IGNORE_FILE, comment.author.name, function (err) { if (err) console.error(`Could not write '${comment.author.name}' to the ignore!`)});
-    }
+    messages.checkIfIgnoreCommand(comment, reddit).then(props => {
+        if (props.ignored) {
+            ignoredUsers.push(props.comment.author.name);
+            fs.appendFile(IGNORE_FILE, `\n${props.comment.author.name}`, function (err) { if (err) console.error(`Could not write '${props.comment.author.name}' to the ignore!`)});
+        }
+    });
 
     const reply = messages.extractReply(comment);
 

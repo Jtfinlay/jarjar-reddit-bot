@@ -35,7 +35,7 @@ describe('messages and responses', () => {
 
     it('should return a message if there are matches', () => {
         let comment = {
-            body: `it's over jar jar, i have the high ground!`,
+            body: `I knew I could count on you!`,
             author: {
                 name: 'user_123456789'
             }
