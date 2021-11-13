@@ -99,7 +99,7 @@ describe('messages and responses', () => {
 
     it('should reply to Anakin and ignore the footer', () => {
         let comment = {
-            body: "She didn't even recognise me, Jar Jar. I thought about her every day since we parted... and she's forgotten me completely. comment !ignore to mute me",
+            body: "She didn't even recognise me, Jar Jar. I thought about her every day since we parted... and she's forgotten me completely. ^comment ^!ignore ^to ^mute ^me",
             author: {
                 name: 'Anakin_Skywalker_Bot'
             }

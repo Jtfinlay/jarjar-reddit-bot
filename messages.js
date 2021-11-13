@@ -1,6 +1,6 @@
 const responses = require('./responses.json');
 
-const STRIP_FROM_MESSAGES = [" comment !ignore to mute me"];
+const STRIP_FROM_MESSAGES = [" ^comment ^!ignore ^to ^mute ^me"];
 const IGNORE_PATTERN = "^!ignore$";
 const KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot"];
 const groupMatchRegex = /\$(\d*)/gi;
