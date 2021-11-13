@@ -51,10 +51,6 @@ stream.on('comment', comment => {
     comment.reply(reply)
         .then(resp => {
             console.log(`Responded to message.`);
-
-            //Add the comment id to the array, we'll use it to
-            //check if a user has replied to one of our comments.
-            commentIds.push('t1_' + resp.id);
         })
         .catch(err => {
             console.error(err);

@@ -80,9 +80,8 @@ describe('messages and responses', () => {
                 name: 'user_12334545'
             }
         };
-        let prevCommentIds = [comment.parent_id];
 
-        let message = messages.extractReply(comment, prevCommentIds);
+        let message = messages.extractReply(comment);
         expect(message).not.toBeNull();
     });
 
