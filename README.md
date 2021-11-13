@@ -1,18 +1,8 @@
-# Anakin Bot
+# Jar Jar Bot
 A reddit bot that responds to movie quotes from comments in [/r/PrequelMemes](https://www.reddit.com/r/PrequelMemes). It uses [**Regular Expressions**](https://en.wikipedia.org/wiki/Regular_expression) to influence the comments to create... Memes.
 
 ### Conditions
 In [responses.json](responses.json) defines all of the possible comments to look for and defines arrays of possible responses to said comments. The bot will look for a key phrase using a regular expression and will pick a random response upon finding one.
-
-### Commands
-The bot will respond to the following commands:
-
-- `!dewit`
-- `!spin`
-- `!youngling`
-- `!sand`
-
-*Note: To summon the bot, your comment only needs to contain one of these strings. You do not need to put the bot's username in the comment.*
 
 ### Example
 Here is an example regular expression:

@@ -10,7 +10,7 @@
             "pattern": "The ability to speak does not make you intelligent(.!)?$",
             "responses": [
                 "No...no! Mesa stay...Mesa yous humble servaunt.",
-                "No...no! Mesa stay...Mesa yous humble servaunt, $username.",
+                "No...no! Mesa stay...Mesa yous humble servaunt, /u/$username.",
                 "Oyi, mooie-mooie!",
                 "How wude!"
             ]
@@ -54,7 +54,7 @@
         {
             "pattern": "(Hi|Hello),? Jar Jar(.!)?$",
             "responses": [
-                "$username! Yiyiyiyiyiyi!!!"
+                "/u/$username! Yiyiyiyiyiyi!!!"
             ]
         },
         {
@@ -79,8 +79,8 @@
                 "Mesa won't let you down, senator.",
                 "Careful, Ani. Careful, Ani!",
                 "Thosen with good in their heart always passen too soon.",
-                "Helloo $username. Good en to see yousa...",
-                "Mesa busten wit happiness seein Yousa again, $username. Deesa bad times, bombad times."
+                "Helloo /u/$username. Good en to see yousa...",
+                "Mesa busten wit happiness seein Yousa again, /u/$username. Deesa bad times, bombad times."
             ]
         }
     ]
