@@ -85,6 +85,30 @@ describe('messages and responses', () => {
         expect(message).not.toBeNull();
     });
 
+    it('should reply to keyword of Darth Jar Jar', () => {
+        let comment = {
+            body: 'Darth Jar Jar',
+            author: {
+                name: 'user_12334545'
+            }
+        };
+
+        let message = messages.extractReply(comment);
+        expect(message).not.toBeNull();
+    });
+
+    it('should reply to keyword of Jar Jar is a Sith lord', () => {
+        let comment = {
+            body: 'Jar Jar is a sith lord',
+            author: {
+                name: 'user_12334545'
+            }
+        };
+
+        let message = messages.extractReply(comment);
+        expect(message).not.toBeNull();
+    });
+
     it('should reply to keyword of JarJar', () => {
         let comment = {
             body: 'JarJar',

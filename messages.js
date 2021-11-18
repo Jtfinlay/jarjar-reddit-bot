@@ -2,8 +2,10 @@ const responses = require('./responses.json');
 
 const STRIP_FROM_MESSAGES = [" ^comment ^!ignore ^to ^mute ^me"];
 const IGNORE_PATTERN = "^!ignore$";
-const KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot"];
+const KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot", "Anakin_Skywalker_Bot"];
 const groupMatchRegex = /\$(\d*)/gi;
+
+const BOT_RESPONSE_CHANCE = 0.1;
 
 function extractMessage(comment, resp) {
     let regex = new RegExp(resp.pattern, 'gi');
@@ -46,7 +48,7 @@ function extractMessage(comment, resp) {
     //Check if the message contains any keywords.
     if (message && message.indexOf('$username') > -1) {
         if (KNOWN_BOTS.includes('$username')) {
-            message = message.replace('$username', 'Master');
+            message = message.replace('$username', 'Your Highness');
         } else {
             message = message.replace('$username', comment.author.name);
         }
@@ -65,6 +67,17 @@ function findAndExtractMessage(comment, arr) {
         let message = extractMessage(comment, resp);
 
         if (message) {
+            // If a bot, only reply once in a while
+            if (KNOWN_BOTS.includes(comment.author) && Math.random() < 1 - BOT_RESPONSE_CHANCE) {
+                continue;
+            }
+
+            // Calculate chance of reply.
+            let chance = resp.chance || 1.0;
+            if (Math.random() < 1- chance) {
+                continue;
+            }
+
             return message;
         }
     }

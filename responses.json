@@ -71,6 +71,30 @@
             ]
         },
         {
+            "pattern": "take a seat[.!]?$",
+            "chance": 0.01,
+            "responses": [
+                "Hasa this seata been taken?"
+            ]
+        },
+        {
+            "pattern": "(Jar ?Jar is ([a-zA-Z\\s]*) ?a Sith Lord)|(Darth Jar ?Jar)",
+            "responses": [
+                "Yousa might'n be sayin dat.",
+                "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?",
+                "Oh, dissen gonna be messy.",
+                "Yousa thinking yousa people gonna die?",
+                "Weesa in trouble now!",
+                "Meesa doing nothing.",
+                "Uh, whosa isa whatsa?",
+                "Meesa was receiving mooie bad advice.",
+                "Wesa must make da immediate arrangements for a Gungan/Separatist attack.",
+                "Well, uh... Meesa more of a deep thinker.",
+                "Meesa doing my best!",
+                "Uh, meesa not big with the Force. Yousa got the wrong gungan."
+            ]
+        },
+        {
             "pattern": "Jar ?Jar",
             "responses": [
                 "Oyi, mooie-mooie! I luv yous!",
@@ -82,7 +106,7 @@
                 "What yet? Monstairs out dare! Leak'n in here, all'n sink'n, and nooooo power! You nutsen! WHEN YOUSA TINK WESA IN TROUBLE?!!!?",
                 "Meesa day starten pitty okeyday witda brisky morning munchen. Den boom....getten berry skeered, un grabbed dat Jedi, and before meesa knowen it...pow! Meesa here. ...getten berry berry skeered.",
                 "Who, meesa?",
-                "Gungans do die'n without a fight.... wesa warriors. Wesa gotta grand army. Dat why you no liken us, metinks.",
+                "Gungans no die'n without a fight.... wesa warriors. Wesa gotta grand army. Dat why you no liken us, metinks.",
                 "Meesa, Your Highness?",
                 "It's-a clear desa separatists made a pact wesa desa Federation du Trade. Senators, dellow felegates. In response to the direct threat to the Republic, meesa propose that the Senate gives immediately emergency powers to the Supreme Chancellor.",
                 "Meesa called Jar Jar Binks, meesa your humble servant!",
@@ -93,7 +117,9 @@
                 "Careful, Ani. Careful, Ani!",
                 "Thosen with good in their heart always passen too soon.",
                 "Helloo /u/$username. Good en to see yousa...",
-                "Meesa busten wit happiness seein Yousa again, /u/$username. Deesa bad times, bombad times."
+                "Meesa busten wit happiness seein Yousa again, /u/$username. Deesa bad times, bombad times.",
+                "It's a longo tale-o, buta small part of it would be mesa clumsy.",
+                "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?"
             ]
         }
     ]
