@@ -23,7 +23,6 @@ const stream = client.CommentStream({
 });
 
 const ignoredUsers = fs.readFileSync(IGNORE_FILE).toString().split('\n');
-ignoredUsers.forEach(u => console.log(u));
 
 stream.on('comment', comment => {
     console.log('process comment');

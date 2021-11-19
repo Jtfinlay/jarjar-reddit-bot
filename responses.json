@@ -16,6 +16,21 @@
             ]
         },
         {
+            "pattern": "Jar Jar.*so great to see you",
+            "responses": [
+                "Helloo /u/$username. Good en to see yousa too!"
+            ]
+        },
+        {
+            "pattern": "Jar Jar.*whatcha doin",
+            "responses": [
+                "Meesa just sharing my Gungan art with yousa and meesa.",
+                "Meesa day starten pitty okeyday witda brisky morning munchen. Den boom....getten berry skeered, un grabbed dat Jedi, and before meesa knowen it...pow! Meesa here. ...getten berry berry skeered.",
+                "Oh, meesa not doing nothing. Hmm"
+            
+            ]
+        },
+        {
             "pattern": "before more of those droids show up.?$",
             "responses": [
                 "Mure? Mure did you spake??!?"
@@ -40,7 +55,7 @@
             ]
         },
         {
-            "pattern": "poof[.!]?$",
+            "pattern": "(poof|bang|pow|bam|blam)[.!]?$",
             "responses": [
                 "How wude."
             ]
@@ -71,14 +86,27 @@
             ]
         },
         {
-            "pattern": "take a seat[.!]?$",
-            "chance": 0.01,
+            "pattern": "take a seat",
+            "chance": 0.1,
             "responses": [
                 "Hasa this seata been taken?"
             ]
         },
         {
-            "pattern": "(Jar ?Jar is ([a-zA-Z\\s]*) ?a Sith Lord)|(Darth Jar ?Jar)",
+            "pattern": "wait here",
+            "chance": 0.05,
+            "responses": [
+                "Datsa no problem. Meesa not goin' nowheres."
+            ]
+        },
+        {
+            "pattern": "banished for being clumsy\\??$",
+            "responses": [
+                "Yousa might'n be sayin dat."
+            ]
+        },
+        {
+            "pattern": "(Jar ?Jar.*Sith)|(Sith.*Jar ?Jar)|(Darth Jar ?Jar)",
             "responses": [
                 "Yousa might'n be sayin dat.",
                 "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?",
@@ -90,8 +118,8 @@
                 "Meesa was receiving mooie bad advice.",
                 "Wesa must make da immediate arrangements for a Gungan/Separatist attack.",
                 "Well, uh... Meesa more of a deep thinker.",
-                "Meesa doing my best!",
-                "Uh, meesa not big with the Force. Yousa got the wrong gungan."
+                "Uh, meesa not big with the Force. Yousa got the wrong gungan.",
+                "Mmm... planning attack take a time."
             ]
         },
         {
@@ -100,7 +128,7 @@
                 "Oyi, mooie-mooie! I luv yous!",
                 "Say what? Oh, nooooo! Weesa ganna die!",
                 "Ex-squeeze me, but da moto grande safe place would be Otoh Gunga. Tis where I grew up... Tis safe city.",
-                "Wesa goen underwater, okeyday? My warning yous. Gungans no liken outlaunders. Don't expict a wern welcome.",
+                "My warning yous. Gungans no liken outlaunders. Don't expict a wern welcome.",
                 "Daza setten yous up. Goen through da planet core is bad bombin!!",
                 "Count meesa outta dis! Better dead here, den deader in da core...Yee guds, whata meesa sayin?!",
                 "What yet? Monstairs out dare! Leak'n in here, all'n sink'n, and nooooo power! You nutsen! WHEN YOUSA TINK WESA IN TROUBLE?!!!?",
@@ -110,16 +138,21 @@
                 "Meesa, Your Highness?",
                 "It's-a clear desa separatists made a pact wesa desa Federation du Trade. Senators, dellow felegates. In response to the direct threat to the Republic, meesa propose that the Senate gives immediately emergency powers to the Supreme Chancellor.",
                 "Meesa called Jar Jar Binks, meesa your humble servant!",
-                "Oh yousa no creating life. Yousa taking life. Yousa poisoned the gungan water.",
+                "Oh yousa no creating life. Yousa taking life.",
                 "Tis embarrassing, but, uh my afraid my’ve been banished. My forgotten, da bosses would do terrible tings to me. Terrible tings to me if me goen back dare.",
                 "Meesa just sharing my Gungan art with yousa and meesa.",
-                "Meesa won't let you down, senator.",
-                "Careful, Ani. Careful, Ani!",
+                "Meesa won't let you down, /u/$username.",
+                "Careful, /u/$username. Careful!",
                 "Thosen with good in their heart always passen too soon.",
-                "Helloo /u/$username. Good en to see yousa...",
+                "Helloo /u/$username. Good en to see yousa.",
                 "Meesa busten wit happiness seein Yousa again, /u/$username. Deesa bad times, bombad times.",
-                "It's a longo tale-o, buta small part of it would be mesa clumsy.",
-                "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?"
+                "It's a longo tale-o, buta small part of it would be meesa clumsy.",
+                "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?",
+                "Yousa need to do dat... dat ting... dat big troop ting.",
+                "Dis gonna be bombad trouble. Meesa know' it.",
+                "Wesa make a bombad team, u/$username",
+                "Wesa good guys will triumph!",
+                "Look meesa found a bang booma gun!"
             ]
         }
     ]

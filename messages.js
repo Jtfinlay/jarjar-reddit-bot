@@ -5,7 +5,7 @@ const IGNORE_PATTERN = "^!ignore$";
 const KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot", "Anakin_Skywalker_Bot"];
 const groupMatchRegex = /\$(\d*)/gi;
 
-const BOT_RESPONSE_CHANCE = 0.1;
+const BOT_RESPONSE_CHANCE = 0.2;
 
 function extractMessage(comment, resp) {
     let regex = new RegExp(resp.pattern, 'gi');
