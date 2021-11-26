@@ -17,6 +17,10 @@ python main.py
 ### Conditions
 In [responses.json](responses.json) defines all of the possible comments to look for and defines arrays of possible responses to said comments. The bot will look for a key phrase using a regular expression and will pick a random response upon finding one.
 
+The process has two threads. This is done to meet subreddit criteria of required timeouts between bot replies.
+ - a `producer` thread, which reads replies, and enqueues responses.
+ - a `consumer` thread, which pulls from queue at a regular cadence and sends the responses.
+
 ### Example
 Here is an example regular expression:
 

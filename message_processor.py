@@ -23,7 +23,8 @@ responses = json.loads(string, object_hook=lambda d: SimpleNamespace(**d))
 def checkForIgnoreCommand(comment):
     if re.search(IGNORE_PATTERN, comment.body, re.IGNORECASE):
         author = comment.parent().author.name
-        print(stylize(f"\n'{author}' has been ignored by '{comment.author.name}'.", fg('cyan')))
+        print(stylize(
+            f"\n'{author}' has been ignored by '{comment.author.name}'.", fg('cyan')))
         return author == os.getenv('REDDIT_USER')
     return False
 
@@ -37,6 +38,7 @@ def hasBotReplied(comment):
             return True
 
     return False
+
 
 def matchReply(comment, message):
     text = comment.body.strip()
@@ -52,6 +54,7 @@ def matchReply(comment, message):
 
         return reply
 
+
 def findReply(comment):
     for message in responses.messages:
         reply = matchReply(comment, message)
@@ -64,7 +67,6 @@ def findReply(comment):
                 continue
 
             return reply
-
 
 #
 # Look for a reply to this comment
