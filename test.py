@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 from types import SimpleNamespace
 import unittest
 
-from message_processor import checkForIgnoreCommand, hasBotReplied
+from message_processor import checkForIgnoreCommand, hasBotReplied, extractReply
 
 load_dotenv()
 
@@ -51,7 +51,7 @@ class TestMessageProcessor(unittest.TestCase):
     def test_correctly_find_when_already_replied(self):
         comment = CommentStub(**{
             'author': SimpleNamespace(**{ 'name': 'user123' }),
-            'body': '!ignore',
+            'body': 'hi hi',
             'replies':
                 RepliesStub(**{
                     '_replies': [CommentStub(**{
@@ -66,7 +66,7 @@ class TestMessageProcessor(unittest.TestCase):
     def test_correctly_find_when_not_replied(self):
         comment = CommentStub(**{
             'author': SimpleNamespace(**{ 'name': 'user123' }),
-            'body': '!ignore',
+            'body': 'hi hi',
             'replies':
                 RepliesStub(**{
                     '_replies': [CommentStub(**{
@@ -77,6 +77,21 @@ class TestMessageProcessor(unittest.TestCase):
         })
 
         self.assertFalse(hasBotReplied(comment))
+
+    def test_replies_to_jar_jar(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'Jar Jar',
+            'replies':
+                RepliesStub(**{
+                    '_replies': [CommentStub(**{
+                        'author': SimpleNamespace(**{'name': 'user123'}),
+                        'body': 'Meesa your humble servant!'
+                    })]
+                })
+        })
+
+        self.assertIsNotNone(extractReply(comment))
 
 
 if __name__ == '__main__':

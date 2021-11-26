@@ -2,12 +2,14 @@
     "messages": [
         {
             "pattern": "Are you brainless\\?( You almost got us killed!?)?$",
+            "chance": 1,
             "responses": [
                 "I spake."
             ]
         },
         {
             "pattern": "The ability to speak does not make you intelligent[.!]?$",
+            "chance": 1,
             "responses": [
                 "No...no! Meesa stay...Meesa yous humble servaunt.",
                 "No...no! Meesa stay...Meesa yous humble servaunt, /u/$username.",
@@ -17,12 +19,14 @@
         },
         {
             "pattern": "Jar Jar.*so great to see you",
+            "chance": 1,
             "responses": [
                 "Helloo /u/$username. Good en to see yousa too!"
             ]
         },
         {
             "pattern": "Jar Jar.*whatcha doin",
+            "chance": 1,
             "responses": [
                 "Meesa just sharing my Gungan art with yousa and meesa.",
                 "Meesa day starten pitty okeyday witda brisky morning munchen. Den boom....getten berry skeered, un grabbed dat Jedi, and before meesa knowen it...pow! Meesa here. ...getten berry berry skeered.",
@@ -32,48 +36,56 @@
         },
         {
             "pattern": "before more of those droids show up.?$",
+            "chance": 1,
             "responses": [
                 "Mure? Mure did you spake??!?"
             ]
         },
         {
             "pattern": "blast us into oblivion[.!]?$",
+            "chance": 1,
             "responses": [
                 "Oh! Yousa point is well seen. Dis way! Hurry!"
             ]
         },
         {
             "pattern": "Force will guide ([a-zA-Z\\s]*)(.!\\?)?$",
+            "chance": 1,
             "responses": [
                 "Ooooh, maxibig...\"da Force\"...Wellen, dat smells stinkowiff."
             ]
         },
         {
             "pattern": "may the force be with you[.]?$",
+            "chance": 1,
             "responses": [
                 "Ooooh, maxibig...\"da Force\"...Wellen, dat smells stinkowiff."
             ]
         },
         {
             "pattern": "(poof|bang|pow|bam|blam)[.!]?$",
+            "chance": 1,
             "responses": [
                 "How wude."
             ]
         },
         {
             "pattern": "and she's forgotten me completely[.!]?$",
+            "chance": 1,
             "responses": [
                 "Shesa happy. Happier den meesa see-en her in longo time."
             ]
         },
         {
             "pattern": "I kn[oe]w I (can|could) count on you[.!]?$",
+            "chance": 1,
             "responses": [
                 "Meesa honored to be taking on dissa heavy burden. Meesa accept this with muy, muy humility and, uh--"
             ]
         },
         {
             "pattern": "(Hi|Hello),? Jar Jar[.!]?$",
+            "chance": 1,
             "responses": [
                 "/u/$username! Yiyiyiyiyiyi!!!"
             ]
@@ -81,25 +93,21 @@
         
         {
             "pattern": "Kill The Jedi[.!]?$",
+            "chance": 1,
             "responses": [
                 "Meesa not a Jedi! Ah! Forget surrender, weesa run!"
             ]
         },
         {
-            "pattern": "take a seat",
-            "chance": 0.1,
-            "responses": [
-                "Hasa this seata been taken?"
-            ]
-        },
-        {
             "pattern": "banished for being clumsy\\??$",
+            "chance": 1,
             "responses": [
                 "Yousa might'n be sayin dat."
             ]
         },
         {
             "pattern": "(Jar ?Jar.*Sith)|(Sith.*Jar ?Jar)|(Darth Jar ?Jar)",
+            "chance": 1,
             "responses": [
                 "Yousa might'n be sayin dat.",
                 "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?",
@@ -117,6 +125,7 @@
         },
         {
             "pattern": "Jar ?Jar",
+            "chance": 1,
             "responses": [
                 "Oyi, mooie-mooie! I luv yous!",
                 "Say what? Oh, nooooo! Weesa ganna die!",

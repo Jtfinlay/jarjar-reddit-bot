@@ -2,10 +2,12 @@ from colored import stylize, fg
 from dotenv import load_dotenv
 import json
 import os
+import random
 import re
 from types import SimpleNamespace
 
 
+BOT_RESPONSE_CHANCE = 0.1
 IGNORE_PATTERN = "^!ignore$"
 KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot", "Anakin_Skywalker_Bot"]
 
@@ -40,6 +42,33 @@ def hasBotReplied(comment):
 
     return False
 
+def matchReply(comment, message):
+    text = comment.body.strip()
+
+    if re.search(message.pattern, text, re.IGNORECASE):
+        reply = random.choice(message.responses)
+
+        # TODO - Check for group matches where we could include parts of the message in the response.
+
+        if comment.author.name in KNOWN_BOTS:
+            reply = reply.replace('$username', 'Your Highness')
+        reply = reply.replace('$username', comment.author.name)
+
+        return reply
+
+def findReply(comment):
+    for message in responses.messages:
+        reply = matchReply(comment, message)
+
+        if reply:
+            if comment.author.name in KNOWN_BOTS and random.randint(0, 1) < 1 - BOT_RESPONSE_CHANCE:
+                continue
+
+            if random.randint(0, 1) < 1 - message.chance:
+                continue
+
+            return reply
+
 
 #
 # Look for a reply to this comment
@@ -47,7 +76,8 @@ def hasBotReplied(comment):
 def extractReply(comment):
     if comment.author.name == os.getenv('REDDIT_USER'):
         return
-    
+
     if hasBotReplied(comment):
         return
-    
+
+    return findReply(comment)
