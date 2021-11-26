@@ -93,6 +93,74 @@ class TestMessageProcessor(unittest.TestCase):
 
         self.assertIsNotNone(extractReply(comment))
 
+    def test_replies_to_jar_jar_without_case_sensitivity(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'JAR JAR',
+            'replies':
+                RepliesStub(**{
+                    '_replies': [CommentStub(**{
+                        'author': SimpleNamespace(**{'name': 'user123'}),
+                        'body': 'Meesa your humble servant!'
+                    })]
+                })
+        })
+
+        self.assertIsNotNone(extractReply(comment))
+
+    def test_replies_to_jarjar(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'jarjar',
+            'replies':
+                RepliesStub(**{
+                    '_replies': [CommentStub(**{
+                        'author': SimpleNamespace(**{'name': 'user123'}),
+                        'body': 'Meesa your humble servant!'
+                    })]
+                })
+        })
+
+        self.assertIsNotNone(extractReply(comment))
+
+    def test_does_not_reply_to_random_comment(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'Hello world',
+            'replies':
+                RepliesStub(**{
+                    '_replies': []
+                })
+        })
+
+        self.assertIsNone(extractReply(comment))
+
+    def test_should_contain_username_if_match_contains_the_keyword(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'Hi, Jar Jar.',
+            'replies':
+                RepliesStub(**{
+                    '_replies': []
+                })
+        })
+
+        reply = extractReply(comment)
+        self.assertIsNotNone(reply)
+        self.assertTrue('u/user123' in reply)
+
+    def test_should_not_reply_to_self(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'jarjar_bot' }),
+            'body': 'Meesa Jar Jar.',
+            'replies':
+                RepliesStub(**{
+                    '_replies': []
+                })
+        })
+
+        self.assertIsNone(extractReply(comment))
+
 
 if __name__ == '__main__':
     unittest.main()

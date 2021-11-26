@@ -6,7 +6,6 @@ import random
 import re
 from types import SimpleNamespace
 
-
 BOT_RESPONSE_CHANCE = 0.1
 IGNORE_PATTERN = "^!ignore$"
 KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot", "Anakin_Skywalker_Bot"]

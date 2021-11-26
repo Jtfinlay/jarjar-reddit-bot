@@ -2,6 +2,18 @@
 
 A reddit bot that responds to movie quotes from comments in [/r/PrequelMemes](https://www.reddit.com/r/PrequelMemes). It uses [**Regular Expressions**](https://en.wikipedia.org/wiki/Regular_expression) to influence the comments to create... Memes.
 
+After setting up your `.env` with the needed credentials,
+
+```
+pip install -r requirements.txt
+
+# Tests
+python -m unittest
+
+# Run
+python main.py
+```
+
 ### Conditions
 In [responses.json](responses.json) defines all of the possible comments to look for and defines arrays of possible responses to said comments. The bot will look for a key phrase using a regular expression and will pick a random response upon finding one.
 

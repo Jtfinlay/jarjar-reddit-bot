@@ -1,10 +1,13 @@
+from dotenv import load_dotenv
 import os
 import praw
-import redis
+import queue
 import threading
 import time
 
 REPLY_SLEEP_TIME_SEC = 60
+
+load_dotenv()
 
 def login():
     return praw.Reddit(
@@ -15,19 +18,26 @@ def login():
         user_agent="Meesa Jar Jar Binks"
     )
 
-def reader():
-    reddit = login()
+def producer(reddit, queue):
     for comment in reddit.subreddit(os.getenv('SUBREDDIT')).stream.comments(skip_existing=True):
         print(f"({comment.permalink} by {comment.author}): {comment.body}")
 
-def responder():
-    reddit = login();
+def consumer(reddit, queue):
     while True:
         print('loop 2')
         time.sleep(REPLY_SLEEP_TIME_SEC)
 
-listenThread = threading.Thread(target=reader)
+reddit=login()
+q = queue.Queue()
+
+listenThread = threading.Thread(target=producer, args=(reddit,q,))
+listenThread.daemon = True
 listenThread.start()
 
-replyThread = threading.Thread(target=responder)
+replyThread = threading.Thread(target=consumer, args=(reddit, q,))
+replyThread.daemon = True
 replyThread.start()
+
+# Using daemons and a while loop to allow ctrl-c termination.
+while True:
+    time.sleep(1)
