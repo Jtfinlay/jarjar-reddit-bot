@@ -31,10 +31,7 @@ def checkForIgnoreCommand(comment):
 # Check whether our bot has already replied to the comment.
 #
 def hasBotReplied(comment):
-    # First, check redis on whether we've replied or not.
-    # TODO
-
-    # Otherwise, look through the replies to find our bot's name.
+    # Look through the replies to find our bot's name.
     for comment in comment.replies.list():
         if comment.author.name == os.getenv('REDDIT_USER'):
             return True
