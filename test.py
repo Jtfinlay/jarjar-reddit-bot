@@ -62,6 +62,18 @@ class TestMessageProcessor(unittest.TestCase):
         })
 
         self.assertTrue(hasBotReplied(comment))
+    
+    def test_correctly_responds_to_forgotten_prompt(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'She didn\'t even recognise me, Jar Jar. I thought about her every day since we parted... and she\'s forgotten me completely.',
+            'replies':
+                RepliesStub(**{
+                    '_replies': []
+                })
+        })
+
+        self.assertEqual(extractReply(comment), "Shesa happy. Happier den meesa see-en her in longo time.")
 
     def test_correctly_find_when_not_replied(self):
         comment = CommentStub(**{

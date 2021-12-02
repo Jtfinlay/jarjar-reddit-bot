@@ -56,13 +56,13 @@ def matchReply(comment, message):
 
 
 def findReply(comment):
+    if comment.author.name in KNOWN_BOTS and random.randint(0, 1) < 1 - BOT_RESPONSE_CHANCE:
+        return
+
     for message in responses.messages:
         reply = matchReply(comment, message)
 
         if reply:
-            if comment.author.name in KNOWN_BOTS and random.randint(0, 1) < 1 - BOT_RESPONSE_CHANCE:
-                continue
-
             if random.randint(0, 1) < 1 - message.chance:
                 continue
 
