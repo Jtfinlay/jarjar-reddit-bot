@@ -83,10 +83,10 @@
                 "My give up. My give up.",
                 "They all broke-ed!",
                 "Retreat, retreat!",
-                "If those dro⁠ids attackin' us, Pa⁠dmé's probably in trouble.",
+                "If those dro﻿ids attackin' us, Pa﻿dmé's probably in trouble.",
                 "Theysa the ones that be shootin' us down.",
-                "There be some bombad clan⁠kens comin this-a-way.",
-                "Battle dr⁠oids? Whatsa they doing here?"
+                "There be some bombad clan﻿kens comin this-a-way.",
+                "Battle dr﻿oids? Whatsa they doing here?"
             ]
         },
         {
@@ -194,7 +194,7 @@
                 "Who, meesa?",
                 "Gungans no die'n without a fight.... wesa warriors. Wesa gotta grand army. Dat why you no liken us, metinks.",
                 "Meesa, Your Highness?",
-                "It's-a clear desa separatists made a pact wesa desa Federation du Trade. Sena⁠tors, dellow felegates. In response to the direct threat to the Rep⁠ublic, meesa propose that the Se⁠nate gives immediately emergency powers to the Supreme C⁠hancellor.",
+                "It's-a clear desa separatists made a pact wesa desa Federation du Trade. Sena﻿tors, dellow felegates. In response to the direct threat to the Rep﻿ublic, meesa propose that the Se﻿nate gives immediately emergency powers to the Supreme C﻿hancellor.",
                 "Meesa called Jar Jar Binks, meesa your humble servant!",
                 "Oh yousa no creating life. Yousa taking life.",
                 "Tis embarrassing, but, uh my afraid my’ve been banished. My forgotten, da bosses would do terrible tings to me. Terrible tings to me if me goen back dare.",
@@ -219,9 +219,9 @@
             "pattern": "Anakin$",
             "chance": 0.01,
             "responses": [
-                "My-my mouth. A⁠ni, I'm stuck. Uh, hey. My tongue is fat. A⁠ni!",
-                "An⁠i and Ob⁠i are waitin' for us to deliver the spicen.",
-                "Wheresa An⁠i? Hesa been gone mooie long time."
+                "My-my mouth. A﻿ni, I'm stuck. Uh, hey. My tongue is fat. A﻿ni!",
+                "An﻿i and Ob﻿i are waitin' for us to deliver the spicen.",
+                "Wheresa An﻿i? Hesa been gone mooie long time."
             ]
         },
         {
@@ -239,10 +239,10 @@
             "chance": 0.01,
             "responses": [
                 "The queen's a bein' grossly nice, meesa tinks. Pitty hot.",
-                "Senator Pa⁠dmé. Meesa palos here! Lookie, lookie, S⁠enator. Desa Jedi arriven.",
+                "Senator Pa﻿dmé. Meesa palos here! Lookie, lookie, S﻿enator. Desa Jedi arriven.",
                 "Sheesa up in that tower? Weesa go to rescuin' her.",
-                "Don't be fearing, Pa⁠dmé. Meesa coming.",
-                "Meesa thinking Pa⁠dmé would help us - has helped us, big-time!",
+                "Don't be fearing, Pa﻿dmé. Meesa coming.",
+                "Meesa thinking Pa﻿dmé would help us - has helped us, big-time!",
                 "Meesa knowin' her for a longo time."
             ]
         },
