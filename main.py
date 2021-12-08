@@ -43,30 +43,34 @@ def addIgnoredUser(author):
 
 
 def producer(queue, ignored_users):
-    reddit = login()
-    for comment in reddit.subreddit(os.getenv('SUBREDDIT')).stream.comments(skip_existing=True):
+    while True:
+        try:
+            reddit = login()
+            for comment in reddit.subreddit(os.getenv('SUBREDDIT')).stream.comments(skip_existing=True):
 
-        # If Queue is pull (we are producing faster than we consume), drop items from the queue
-        # TODO - Might be smarter to use Redis to have items expire than this max queue length, but
-        # at least this might prevent out-of-memory exceptions.
-        while queue.full():
-            item = queue.get()
-            print(
-                stylize(f"Queue is too long! Dropping old entry: {item.commentId}!", fg('red')))
+                # If Queue is pull (we are producing faster than we consume), drop items from the queue
+                # TODO - Might be smarter to use Redis to have items expire than this max queue length, but
+                # at least this might prevent out-of-memory exceptions.
+                while queue.full():
+                    item = queue.get()
+                    print(
+                        stylize(f"Queue is too long! Dropping old entry: {item.commentId}!", fg('red')))
 
-        if checkForIgnoreCommand(comment):
-            ignored_users.append(comment.author.name)
-            addIgnoredUser(comment.author.name)
+                if checkForIgnoreCommand(comment):
+                    ignored_users.append(comment.author.name)
+                    addIgnoredUser(comment.author.name)
 
-        if (comment.author.name in ignored_users):
-            print(
-                stylize(f"Skipping ignored user (push): {comment.author.name}", fg('red')))
-            continue
+                if (comment.author.name in ignored_users):
+                    print(
+                        stylize(f"Skipping ignored user (push): {comment.author.name}", fg('red')))
+                    continue
 
-        reply = extractReply(comment)
-        if reply:
-            print(stylize(f"Pushed item ${comment.id}", fg('yellow')))
-            queue.put(ReplyItem(comment.id, reply), False)
+                reply = extractReply(comment)
+                if reply:
+                    print(stylize(f"Pushed item ${comment.id}", fg('yellow')))
+                    queue.put(ReplyItem(comment.id, reply), False)
+        except Exception as e:
+            print(stylize(f"Exception hit in producer: ${e}", fg('red')))
 
 
 def consumer(queue, ignored_users):
@@ -75,22 +79,26 @@ def consumer(queue, ignored_users):
         item = queue.get()
         print(stylize(f"Pulled item ${item.commentId}", fg('sky_blue_2')))
 
-        # Get the comment and double-check we haven't replied to it.
-        comment = reddit.comment(id=item.commentId)
-        if hasBotReplied(comment):
+        try:
+            # Get the comment and double-check we haven't replied to it.
+            comment = reddit.comment(id=item.commentId)
+            if hasBotReplied(comment):
+                print(
+                    stylize(f"Bot has already replied to: ${item.commentId}", fg('red')))
+                continue
+
+            if (comment.author.name in ignored_users):
+                print(
+                    stylize(f"Skipping ignored user (pull): {comment.author.name}", fg('red')))
+                continue
+
+            comment.reply(item.reply)
+
             print(
-                stylize(f"Bot has already replied to: ${item.commentId}", fg('red')))
-            continue
+                stylize(f"Replied (${item.commentId}) with: ${item.reply}", fg('green')))
 
-        if (comment.author.name in ignored_users):
-            print(
-                stylize(f"Skipping ignored user (pull): {comment.author.name}", fg('red')))
-            continue
-
-        comment.reply(item.reply)
-
-        print(
-            stylize(f"Replied (${item.commentId}) with: ${item.reply}", fg('green')))
+        except Exception as e:
+            print(stylize(f"Exception hit in consumer: ${e}", fg('red')))
 
         time.sleep(REPLY_SLEEP_TIME_SEC)
 

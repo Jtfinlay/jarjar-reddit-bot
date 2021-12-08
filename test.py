@@ -75,6 +75,53 @@ class TestMessageProcessor(unittest.TestCase):
 
         self.assertEqual(extractReply(comment), "Shesa happy. Happier den meesa see-en her in longo time.")
 
+    def test_correctly_responds_great_to_see_you(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'Jar Jar so great to see you',
+            'replies':
+                RepliesStub(**{
+                    '_replies': []
+                })
+        })
+
+        self.assertEqual(extractReply(comment), "Helloo /u/user123. Good en to see yousa too!")
+        
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'Sup Jar Jar great to see you again pal :)',
+            'replies':
+                RepliesStub(**{
+                    '_replies': []
+                })
+        })
+
+        self.assertEqual(extractReply(comment), "Helloo /u/user123. Good en to see yousa too!")
+
+    def test_correctly_responds_to_ability_to_speak(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'The ability to speak does not make you intelligent.',
+            'replies':
+                RepliesStub(**{
+                    '_replies': []
+                })
+        })
+
+        self.assertIsNotNone(extractReply(comment))
+
+    def test_correctly_responds_to_ability_to_speak_variant(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'The ability to speak doesn\'t make you intelligent.',
+            'replies':
+                RepliesStub(**{
+                    '_replies': []
+                })
+        })
+
+        self.assertIsNotNone(extractReply(comment))
+
     def test_correctly_find_when_not_replied(self):
         comment = CommentStub(**{
             'author': SimpleNamespace(**{ 'name': 'user123' }),

@@ -8,7 +8,7 @@
             ]
         },
         {
-            "pattern": "The ability to speak does not make you intelligent[.!]?$",
+            "pattern": "The ability to speak (does not|doesn'?t) make you intelligent[.!]?$",
             "chance": 1,
             "responses": [
                 "No...no! Meesa stay...Meesa yous humble servaunt.",
@@ -25,7 +25,7 @@
             ]
         },
         {
-            "pattern": "Jar Jar.*so great to see you",
+            "pattern": "Jar Jar.*great to see you",
             "chance": 1,
             "responses": [
                 "Helloo /u/$username. Good en to see yousa too!"
@@ -37,8 +37,7 @@
             "responses": [
                 "Meesa just sharing my Gungan art with yousa and meesa.",
                 "Meesa day starten pitty okeyday witda brisky morning munchen. Den boom....getten berry skeered, un grabbed dat Jedi, and before meesa knowen it...pow! Meesa here. ...getten berry berry skeered.",
-                "Oh, meesa not doing nothing. Hmm"
-            
+                "Oh, meesa not doing nothing."
             ]
         },
         {
@@ -63,30 +62,17 @@
             ]
         },
         {
-            "pattern": "may the force be with you[.]?$",
+            "pattern": "may the force be with you.?$",
             "chance": 1,
             "responses": [
                 "Ooooh, maxibig...\"da Force\"...Wellen, dat smells stinkowiff."
             ]
         },
         {
-            "pattern": "(poof|bang|pow|bam|blam)[.!]?$",
+            "pattern": "(poof|bang|pow|bam|blam).?$",
             "chance": 1,
             "responses": [
                 "How wude."
-            ]
-        },
-        {
-            "pattern": "(droid|clanker|clanka)",
-            "chance": 0.1,
-            "responses": [
-                "My give up. My give up.",
-                "They all broke-ed!",
-                "Retreat, retreat!",
-                "If those dro﻿ids attackin' us, Pa﻿dmé's probably in trouble.",
-                "Theysa the ones that be shootin' us down.",
-                "There be some bombad clan﻿kens comin this-a-way.",
-                "Battle dr﻿oids? Whatsa they doing here?"
             ]
         },
         {
@@ -97,7 +83,7 @@
             ]
         },
         {
-            "pattern": "and she's forgotten me completely[.!]?$",
+            "pattern": "and she's forgotten me completely.?$",
             "chance": 1,
             "responses": [
                 "Shesa happy. Happier den meesa see-en her in longo time."
@@ -114,9 +100,9 @@
             "pattern": "(New Orleans|Louisiana|Florida)",
             "chance": 1,
             "responses": [
-                "Lookee, lookee, it's a swamp planet just like home. Meesa have to get going.",
+                "Lookee, lookee, it's a swamp planet just like home.",
                 "Ah theesa swamp dwellers just like meesa.",
-                "Thisen is a different swamp altogether. Sorry.",
+                "Thisen is a different swamp altogether.",
                 "There's a bad boogie monster down there, you betcha."
             ]
         },
@@ -125,14 +111,6 @@
             "chance": 1,
             "responses": [
                 "/u/$username! Yiyiyiyiyiyi!!!"
-            ]
-        },
-        
-        {
-            "pattern": "Kill (The )?Jedi[.!]?",
-            "chance": 1,
-            "responses": [
-                "Meesa not a Jedi! Ah! Forget surrender, weesa run!"
             ]
         },
         {
@@ -168,11 +146,11 @@
                 "Meesa doing nothing.",
                 "Whosa isa whatsa?",
                 "Meesa was receiving mooie bad advice.",
-                "Wesa must make da immediate arrangements for a Gungan/Separatist attack.",
+                "Weesa must make da immediate arrangements for a Gungan/Separatist attack.",
                 "Well, uh... Meesa more of a deep thinker.",
                 "Meesa not big with the Force. Yousa got the wrong gungan.",
                 "Mmm... planning attack take a time.",
-                "Wesa goen underwater, okey-day?",
+                "Weesa goen underwater, okey-day?",
                 "Yousa follow me now, okey-day?",
                 "Meesa, Uh, creating and sharing gungan ritual style art with Trade Federation.",
                 "Who's a plague-a? Meesa?",
@@ -189,12 +167,12 @@
                 "My warning yous. Gungans no liken outlaunders.",
                 "Daza setten yous up. Goen through da planet core is bad bombin!!",
                 "Count meesa outta dis! Better dead here, den deader in da core...Yee guds, whata meesa sayin?!",
-                "What yet? Monstairs out dare! Leak'n in here, all'n sink'n, and nooooo power! You nutsen! WHEN YOUSA TINK WESA IN TROUBLE?!!!?",
+                "What yet? Monstairs out dare! Leak'n in here, all'n sink'n, and nooooo power! You nutsen! WHEN YOUSA TINK weesa IN TROUBLE?!!!?",
                 "Meesa day starten pitty okeyday witda brisky morning munchen. Den boom....getten berry skeered, un grabbed dat Jedi, and before meesa knowen it...pow! Meesa here. ...getten berry berry skeered.",
                 "Who, meesa?",
-                "Gungans no die'n without a fight.... wesa warriors. Wesa gotta grand army. Dat why you no liken us, metinks.",
+                "Gungans no die'n without a fight.... Weesa warriors. Weesa gotta grand army. Dat why you no liken us, metinks.",
                 "Meesa, Your Highness?",
-                "It's-a clear desa separatists made a pact wesa desa Federation du Trade. Sena﻿tors, dellow felegates. In response to the direct threat to the Rep﻿ublic, meesa propose that the Se﻿nate gives immediately emergency powers to the Supreme C﻿hancellor.",
+                "It's-a clear desa separatists made a pact weesa desa Federation du Trade. Senators, dellow felegates. In response to the direct threat to the Republic, meesa propose that the Senate gives immediately emergency powers to the Supreme Chancellor.",
                 "Meesa called Jar Jar Binks, meesa your humble servant!",
                 "Oh yousa no creating life. Yousa taking life.",
                 "Tis embarrassing, but, uh my afraid my've been banished. My forgotten, da bosses would do terrible tings to me. Terrible tings to me if me goen back dare.",
@@ -208,42 +186,16 @@
                 "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?",
                 "Yousa need to do dat... dat ting... dat big troop ting.",
                 "Dis gonna be bombad trouble. Meesa know' it.",
-                "Wesa make a bombad team, u/$username",
-                "Wesa good guys will triumph!",
+                "Weesa make a bombad team, u/$username",
+                "Weesa good guys will triumph!",
                 "Look meesa found a bang booma gun!",
                 "Wait. Meesa eyeball's stuck in the sleeve.",
-                "Millions will be starvin' and dyin' without your help."
-            ]
-        },
-        {
-            "pattern": "Anakin$",
-            "chance": 0.01,
-            "responses": [
-                "My-my mouth. A﻿ni, I'm stuck. Uh, hey. My tongue is fat. A﻿ni!",
-                "An﻿i and Ob﻿i are waitin' for us to deliver the spicen.",
-                "Wheresa An﻿i? Hesa been gone mooie long time."
-            ]
-        },
-        {
-            "pattern": "negotiations",
-            "chance": 0.1,
-            "responses": [
-                "Meesa knowing meesa be big help with the negotations.",
+                "Millions will be starvin' and dyin' without your help.",
                 "Hi-lo! Let meesa through! Meesa on a diplomatic mission. /u/$username ! It's a pleasure to be seeing yousa!",
                 "Meesa proposing a conceptual work of art to honor the Trade Federation.",
-                "Meesa think yousa have to deal."
-            ]
-        },
-        {
-            "pattern": "(Padme|Amidala)",
-            "chance": 0.01,
-            "responses": [
-                "The queen's a bein' grossly nice, meesa tinks. Pitty hot.",
-                "Senator Pa﻿dmé. Meesa palos here! Lookie, lookie, S﻿enator. Desa Jedi arriven.",
-                "Sheesa up in that tower? Weesa go to rescuin' her.",
-                "Don't be fearing, Pa﻿dmé. Meesa coming.",
-                "Meesa thinking Pa﻿dmé would help us - has helped us, big-time!",
-                "Meesa knowin' her for a longo time."
+                "Yousa bein' grossly nice, meesa tinks.",
+                "These are some nice-ah duds, ah-poopah!",
+                "/u/$username, look! Yousa not gonna believe it. Meesa all sparkly glowy! Now, weesa gonna have all the time to spend together! Yaaahh! Ah-hahhh!"
             ]
         },
         {
@@ -253,16 +205,17 @@
                 "Desa nobody dare. The Gungan city is deserted. Some kinda fight, meesa tinks.",
                 "When in trouble Gungans go to sacred place.",
                 "Don't expict a wern welcome.",
-                "Isa Gungan waterproofing. Isa why wesa swim so good.",
+                "Isa Gungan waterproofing. Isa why weesa swim so good.",
                 "They say Risha Loo know ancient Gungan mystical power - mind over matter.",
-                "But wesa all don't look alike."
+                "Weesa all don't look alike."
             ]
         },
         {
-            "pattern": "tries it",
-            "chance": 0.1,
+            "pattern": "tries it.?$",
+            "chance": 1,
             "responses": [
-                "Hesa got all crispy fried."
+                "Hesa got all crispy fried.",
+                "What'sa happen to you? Yousa burn your face-AAAAHH! Ani-bo-bani! What'sa happen to you?!"
             ]
         }
     ]
