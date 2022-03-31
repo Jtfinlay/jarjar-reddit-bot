@@ -18,6 +18,13 @@
             ]
         },
         {
+            "pattern": "met jar jar and boss nas[s][.!]?$",
+            "chance": 1,
+            "responses": [
+                "Weesa took a bongo from da scene."
+            ]
+        },
+        {
             "pattern": "won't be necc?ess?ary[.!]?$",
             "chance": 1,
             "responses": [
@@ -25,14 +32,14 @@
             ]
         },
         {
-            "pattern": "Jar Jar.*great to see you",
+            "pattern": "(Jar ?-?Jar).*great to see you",
             "chance": 1,
             "responses": [
                 "Helloo /u/$username. Good en to see yousa too!"
             ]
         },
         {
-            "pattern": "Jar Jar.*whatcha doin",
+            "pattern": "(Jar ?-?Jar).*whatcha doin",
             "chance": 1,
             "responses": [
                 "Meesa just sharing my Gungan art with yousa and meesa.",
@@ -52,27 +59,6 @@
             "chance": 1,
             "responses": [
                 "Oh! Yousa point is well seen. Dis way! Hurry!"
-            ]
-        },
-        {
-            "pattern": "Force will guide ([a-zA-Z\\s]*)(.!\\?)?$",
-            "chance": 1,
-            "responses": [
-                "Ooooh, maxibig...\"da Force\"...Wellen, dat smells stinkowiff."
-            ]
-        },
-        {
-            "pattern": "may the force be with you.?$",
-            "chance": 1,
-            "responses": [
-                "Ooooh, maxibig...\"da Force\"...Wellen, dat smells stinkowiff."
-            ]
-        },
-        {
-            "pattern": "(poof|bang|pow|bam|blam).?$",
-            "chance": 1,
-            "responses": [
-                "How wude."
             ]
         },
         {
@@ -103,7 +89,17 @@
                 "Lookee, lookee, it's a swamp planet just like home.",
                 "Ah theesa swamp dwellers just like meesa.",
                 "Thisen is a different swamp altogether.",
-                "There's a bad boogie monster down there, you betcha."
+                "There's a bad boogie monster down there, you betcha.",
+                "Ahhh, dissen cozy"
+            ]
+        },
+        {
+            "pattern": "(Arizona|Sahara|Death Valley|Nevada)",
+            "chance": 1,
+            "responses": [
+                "Disa sun doen murder to meesa skin.",
+                "Pitty hot!",
+                "Mesa getting a creepin' feeling here"
             ]
         },
         {
@@ -154,7 +150,8 @@
                 "Yousa follow me now, okey-day?",
                 "Meesa, Uh, creating and sharing gungan ritual style art with Trade Federation.",
                 "Who's a plague-a? Meesa?",
-                "Rish Loo manipulated meesa head thoughts with lies and da misinformation."
+                "Rish Loo manipulated meesa head thoughts with lies and da misinformation.",
+                "It was a accident."
             ]
         },
         {
@@ -172,7 +169,8 @@
                 "Who, meesa?",
                 "Gungans no die'n without a fight.... Weesa warriors. Weesa gotta grand army. Dat why you no liken us, metinks.",
                 "Meesa, Your Highness?",
-                "It's-a clear desa separatists made a pact weesa desa Federation du Trade. Senators, dellow felegates. In response to the direct threat to the Republic, meesa propose that the Senate gives immediately emergency powers to the Supreme Chancellor.",
+                "It's-a clear desa separatists made a pact weesa desa Federation du Trade. Senators, dellow felegates. In response to the direct threat to the Republic, meesa propose that da Senate gives immediately emergency powers to da Supreme Chancellor.",
+                "Senators, rellow fedditors. In response to da direct threat to /r/PrequelMemes, meesa propose that da mods gives immediately emergency powers to /u/$username!",
                 "Meesa called Jar Jar Binks, meesa your humble servant!",
                 "Oh yousa no creating life. Yousa taking life.",
                 "Tis embarrassing, but, uh my afraid my've been banished. My forgotten, da bosses would do terrible tings to me. Terrible tings to me if me goen back dare.",
@@ -195,7 +193,13 @@
                 "Meesa proposing a conceptual work of art to honor the Trade Federation.",
                 "Yousa bein' grossly nice, meesa tinks.",
                 "These are some nice-ah duds, ah-poopah!",
-                "/u/$username, look! Yousa not gonna believe it. Meesa all sparkly glowy! Now, weesa gonna have all the time to spend together! Yaaahh! Ah-hahhh!"
+                "/u/$username, look! Yousa not gonna believe it. Meesa all sparkly glowy! Now, weesa gonna have all the time to spend together! Yaaahh! Ah-hahhh!",
+                "Oh, but it 'tis. 'Tis demanded by the Gods, it 'tis.",
+                "Hello, boyos!",
+                "My tongue is fat. My tongue.. uh, wrench. Wrench! Where is da wrench? Oh, dare it is. Hey.. Uh-oh! Uh, Ani. I'm stuck. Ani!??",
+                "Heyo-dales, Cap'n /u/$username. Meesa back!",
+                "Dis is nutsen!",
+                "Uh, let's see. I'll take that one. Mm-hmm. Uh-oh. Exsqueeze me, are you done with that? That's really good."
             ]
         },
         {
