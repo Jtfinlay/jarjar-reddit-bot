@@ -1,225 +1,149 @@
 {
     "messages": [
         {
-            "pattern": "Are you brainless\\?( You almost got us killed!?)?$",
+            "pattern": "hobbit",
             "chance": 1,
             "responses": [
-                "I spake."
+                "Stupid, fat hobbit!",
+                "Stupid, fat hobbitses!",
+                "Sneaky little hobbitses. Wicked, tricksy, false!",
+                "And theysa doesn't taste very nice, does theysa, Precious? No.. Not very nice at all, muy love.",
+                "But the fat Hobbit, hesa knows. Eyes always watching.",
+                "_Then weesa stabs them out. Make him crawl._ Yes. Yes. Yes.",
+                "The precious will be ours... once the Hobbitses are dead!",
+                "Look. What dis? Crumbs on his jacketses. Hesa took it! Hesa took it! I seen him!",
+                "Curse the Baggins! It's gone! What has it got in its pocketses? Oh weesa guess, weeas guess, my precious. Hesa found it, yes hesa must have.",
+                "Naughty little fly. Why does he cry? Caught in a web. Soon you'll be... eaten.",
+                "Hesa horrid, fat Hobbit, who hates Sméagol, and who makes up nasty lies!"
             ]
         },
         {
-            "pattern": "The ability to speak (does not|doesn'?t) make you intelligent[.!]?$",
+            "pattern": "(potatoes|po-ta-toes|taters)",
             "chance": 1,
             "responses": [
-                "No...no! Meesa stay...Meesa yous humble servaunt.",
-                "No...no! Meesa stay...Meesa yous humble servaunt, /u/$username.",
-                "Oyi, mooie-mooie!",
-                "How wude!"
+                "What'sa taters, precious? What'sa taters, eh?",
+                "And theysa doesn't taste very nice, does theysa, Precious? No.. Not very nice at all, meesa love.",
+                "Oh yes we could. Spoilin' nice fish. Gives it to us raw and w-r-r-riggling; you keep nasty chips.",
+                "Stew the rabbits! Spoil beautiful meat Smeagol saved for you, poor hungry Smeagol."
             ]
         },
         {
-            "pattern": "met jar jar and boss nas[s][.!]?$",
+            "pattern": "baggins",
             "chance": 1,
             "responses": [
-                "Weesa took a bongo from da scene."
+                "SHIIIIIIRE! BAGGINS!",
+                "Stupid, fat hobbit!",
+                "Stupid, fat hobbitses!",
+                "Bagginses? What is a Bagginses? Precious...",
+                "No, not MASTER!",
+                "Curse the Baggins! It's gone! What has it got in its pocketses? Oh weesa guess, weeas guess, my precious. Hesa found it, yes hesa must have."
             ]
         },
         {
-            "pattern": "won't be necc?ess?ary[.!]?$",
+            "pattern": "pocket",
             "chance": 1,
             "responses": [
-                "Oh but it 'tis. 'Tis demanded by the gods, it 'tis."
+                "What has it got in its pocketses?",
+                "Did weesa say so precious - Did weesa say so what has itsa got in his pocket."
             ]
         },
         {
-            "pattern": "(Jar ?-?Jar).*great to see you",
+            "pattern": "Mordor",
             "chance": 1,
             "responses": [
-                "Helloo /u/$username. Good en to see yousa too!"
+                "Up up up da stairs, and into... da bombad tunnel.",
+                "Mustn't go that way! Mustn't hurt the Precious!",
+                "It's the only way. Go in, or go back.",
+                "Weesa not _in_ decent places.",
+                "Clever Hobbits, to climb so high! Mustn't go that way! Mustn't hurt the Precious!",
+                "Wicked Men. Servants of Sauron. Theysa are called to Mordor. The Dark One is gathering all armies to him. It won’t be long now. Hesa will soon be ready.",
+                "Master must go inside da tunnel."
             ]
         },
         {
-            "pattern": "(Jar ?-?Jar).*whatcha doin",
+            "pattern": "(smeagal|smegal|gollum|smegel|Sméagol|smeagol|smegol)",
             "chance": 1,
             "responses": [
-                "Meesa just sharing my Gungan art with yousa and meesa.",
-                "Meesa day starten pitty okeyday witda brisky morning munchen. Den boom....getten berry skeered, un grabbed dat Jedi, and before meesa knowen it...pow! Meesa here. ...getten berry berry skeered.",
-                "Oh, meesa not doing nothing."
+                "Theysa cursed us. Murderer theysa called us. Theysa cursed us, and drove us away. And weesa wept, Precious, weesa wept to be so alone.",
+                "Mustn’t ask meesa, not it’s business. Gollum, gollum.",
+                "Oh! Weesa knows! Weesa knows safe paths for hobbitses! Safe paths in the dark… SHUT UP!",
+                "Yes, precious, false! They will cheat you, hurt you, LIE.",
+                "Master is meesa friend",
+                "Meesa not listening… Meesa not listening…",
+                "Yousa a liar and a thief. No.. Murderer!. GO AWAY! Go away? Where would yousa be without meesa, uh? Gollum, gollum...",
+                "_Smeagol... Why does he cry, Smeagol?_ Cruel men hurts us. Jar Jar tricksed us. _Of course he did. I told yousa hesa was tricksy. I told yousa he was false._",
+                "The rock and pool isa nice and cool... so juicy sweet! Meesa only wish [whack], to catch-a fish [whack], so juicy SWEET!",
+                "It was tricksy, precious. Very tricksy.",
+                "Smeagol? No, no, Not poor Smeagol. Smeagol hates nasty elf bread.",
+                "Smeagol lied.",
+                "Stupid, fat hobbitses!",
+                "Curse it and crush it! Weesa hates it forever!",
+                "Sneaking? Sneaking? Fat Hobbit is always so polite. Smeagol shows themsa secret ways that nobody else could find, and they say 'sneak!' Sneak? Very nice friend. Oh, yes, my precious. Very nice, very nice.",
+                "Weesa soon forgot the taste of bread, the sound of wind in the trees... We even forgot our name...",
+                "Wake up. Wake up. Wake up, sleepies. Weesa must go, yeeees, weeas must go at once.",
+                "It's-a clear desa hobbitses made a pact weesa desa Fellowship du Precious. Orcs, dellow felegates. In response to the direct threat to the Precious, meesa propose that Sauron gives immediately emergency powers to Smeagol. _Gollum, Gollum._",
+                "Never! Smeagol wouldn't hurt a fly! ... ahh!",
+                "What'sa taters, precious? What'sa taters, eh?",
+                "And theysa doesn't taste very nice, does theysa, Precious? No.. Not very nice at all, meesa love.",
+                "Oh yes we could. Spoilin' nice fish. Gives it to us raw and w-r-r-riggling; you keep nasty chips.",
+                "Stew the rabbits! Spoil beautiful meat Smeagol saved for you, poor hungry Smeagol.",
+                "_gollum, gollum_"
             ]
         },
         {
-            "pattern": "before more (of those )?([a-zA-Z\\s]*) show up[.!]?",
+            "pattern": "(precious| ring| rings)",
             "chance": 1,
             "responses": [
-                "Mure? Mure did you spake??!?"
-            ]
-        },
-        {
-            "pattern": "blast us into oblivion[.!]?$",
-            "chance": 1,
-            "responses": [
-                "Oh! Yousa point is well seen. Dis way! Hurry!"
-            ]
-        },
-        {
-            "pattern": "crunch",
-            "chance": 1,
-            "responses": [
-                "Meesa haten crunchen. Das da las ting meesa want."
-            ]
-        },
-        {
-            "pattern": "and she's forgotten me completely.?$",
-            "chance": 1,
-            "responses": [
-                "Shesa happy. Happier den meesa see-en her in longo time."
-            ]
-        },
-        {
-            "pattern": "I kn[oe]w I (can|could) count on you[.!]?$",
-            "chance": 1,
-            "responses": [
-                "Meesa honored to be taking on dissa heavy burden. Meesa accept this with muy, muy humility and, uh--"
-            ]
-        },
-        {
-            "pattern": "(New Orleans|Louisiana|Florida)",
-            "chance": 1,
-            "responses": [
-                "Lookee, lookee, it's a swamp planet just like home.",
-                "Ah theesa swamp dwellers just like meesa.",
-                "Thisen is a different swamp altogether.",
-                "There's a bad boogie monster down there, you betcha.",
-                "Ahhh, dissen cozy"
-            ]
-        },
-        {
-            "pattern": "(Arizona|Sahara|Death Valley|Nevada)",
-            "chance": 1,
-            "responses": [
-                "Disa sun doen murder to meesa skin.",
-                "Pitty hot!",
-                "Mesa getting a creepin' feeling here"
-            ]
-        },
-        {
-            "pattern": "(Hi|Hello),? Jar Jar[.!]?$",
-            "chance": 1,
-            "responses": [
-                "/u/$username! Yiyiyiyiyiyi!!!"
-            ]
-        },
-        {
-            "pattern": "banished for being clumsy\\??$",
-            "chance": 1,
-            "responses": [
-                "Yousa might'n be sayin dat."
-            ]
-        },
-        {
-            "pattern": "Julia",
-            "chance": 1,
-            "responses": [
-                "Oh, Great Queenie Julia, Please Forgive Mesa.",
-                "Yup. The Queen isa meesa palo.",
-                "Meesa knowin her for a longo time.",
-                "Maybe itsa best to get Masteren Mace to hear this.",
-                "Meesa love da Queen Julia.",
-                "Meesa love for beautiful Julia is da only thing startin' the talks. Shesa trustin' only meesa? Oh, and now yousa? A little.",
-                "Meesa takin' my loyal helper, Masteren Mace, and we findin' da Queenie and bringin' her backin to yousa.",
-                "Meesa never let anything happen to you, Queenie"
+                "Weesa wants it, weesa needs it. Meesa must have the precious. Theysa stoles it from us. Sneaky little hobbitses. Wicked, tricksy, false!",
+                "Well precious, if hesa looses, then weesa eats it!",
+                "It came to meesa, my own, my love… my… preciousssss",
+                "...and take it for MEESA. _For us_. Yes, weesa... weesa meant for us.",
+                "Lost! Meesa precious is LOOOOOSSST!",
+                "Weesa swears to serve the master of the Precious. Weesa will swear on... on... the Precious!",
+                "Wraiths! Wraiths on wings! Theysa are calling for it. Theysa are calling for the precious.",
+                "He wants it - he needs it! Sméagol sees it in his eyes. Very soon, he will ask you for it - you will see … the Fat One will take it from you.",
+                "Myyyyy... PRECIOUS!"
             ]
         },
         {
             "pattern": "(Jar ?Jar.*Sith)|(Sith.*Jar ?Jar)|(Darth Jar ?Jar)",
             "chance": 1,
             "responses": [
-                "Yousa might'n be sayin dat.",
-                "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?",
-                "Oh, dissen gonna be messy.",
-                "Yousa thinking yousa people gonna die?",
-                "Weesa in trouble now!",
-                "Meesa doing nothing.",
-                "Whosa isa whatsa?",
-                "Meesa was receiving mooie bad advice.",
-                "Weesa must make da immediate arrangements for a Gungan/Separatist attack.",
-                "Well, uh... Meesa more of a deep thinker.",
-                "Meesa not big with the Force. Yousa got the wrong gungan.",
-                "Mmm... planning attack take a time.",
-                "Weesa goen underwater, okey-day?",
-                "Yousa follow me now, okey-day?",
-                "Meesa, Uh, creating and sharing gungan ritual style art with Trade Federation.",
-                "Who's a plague-a? Meesa?",
-                "Rish Loo manipulated meesa head thoughts with lies and da misinformation.",
-                "It was a accident."
+                "Sith? Whatsa Sith, precious?",
+                "Oh, dissen gonna be messy, precious.",
+                "_Smeagol... Why does he cry, Smeagol?_ Cruel men hurts us. Darth Jar Jar tricksed us. _Of course he did. I told yousa hesa was tricksy. I told yousa he was false._",
+                "Smeagol lied.",
+                "And theysa doesn't taste very nice, does theysa, Precious? No.. Not very nice at all, meesa love.",
+                "Theysa cursed us. Murderer theysa called us."
             ]
         },
         {
             "pattern": "(Jar ?-?Jar)|(Binks)",
             "chance": 1,
             "responses": [
-                "Oyi, mooie-mooie! I luv yous!",
-                "Say what? Oh, nooooo! Weesa ganna die!",
-                "Ex-squeeze me, but da moto grande safe place would be Otoh Gunga. Tis where I grew up... Tis safe city.",
-                "My warning yous. Gungans no liken outlaunders.",
-                "Daza setten yous up. Goen through da planet core is bad bombin!!",
-                "Count meesa outta dis! Better dead here, den deader in da core...Yee guds, whata meesa sayin?!",
-                "What yet? Monstairs out dare! Leak'n in here, all'n sink'n, and nooooo power! You nutsen! WHEN YOUSA TINK weesa IN TROUBLE?!!!?",
-                "Meesa day starten pitty okeyday witda brisky morning munchen. Den boom....getten berry skeered, un grabbed dat Jedi, and before meesa knowen it...pow! Meesa here. ...getten berry berry skeered.",
-                "Who, meesa?",
-                "Gungans no die'n without a fight.... Weesa warriors. Weesa gotta grand army. Dat why you no liken us, metinks.",
-                "Meesa, Your Highness?",
-                "It's-a clear desa separatists made a pact weesa desa Federation du Trade. Senators, dellow felegates. In response to the direct threat to the Republic, meesa propose that da Senate gives immediately emergency powers to da Supreme Chancellor.",
-                "Senators, rellow fedditors. In response to da direct threat to /r/PrequelMemes, meesa propose that da mods gives immediately emergency powers to /u/$username!",
-                "Meesa called Jar Jar Binks, meesa your humble servant!",
-                "Oh yousa no creating life. Yousa taking life.",
-                "Tis embarrassing, but, uh my afraid my've been banished. My forgotten, da bosses would do terrible tings to me. Terrible tings to me if me goen back dare.",
-                "Meesa just sharing my Gungan art with yousa and meesa.",
-                "Meesa won't let you down, /u/$username.",
-                "Careful, /u/$username. Careful!",
-                "Thosen with good in their heart always passen too soon.",
-                "Helloo /u/$username. Good en to see yousa.",
-                "Meesa busten wit happiness seein Yousa again, /u/$username. Deesa bad times, bombad times.",
-                "It's a longo tale-o, buta small part of it would be meesa clumsy.",
-                "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?",
-                "Yousa need to do dat... dat ting... dat big troop ting.",
-                "Dis gonna be bombad trouble. Meesa know' it.",
-                "Weesa make a bombad team, u/$username",
-                "Weesa good guys will triumph!",
-                "Look meesa found a bang booma gun!",
-                "Wait. Meesa eyeball's stuck in the sleeve.",
-                "Millions will be starvin' and dyin' without your help.",
-                "Hi-lo! Let meesa through! Meesa on a diplomatic mission. /u/$username ! It's a pleasure to be seeing yousa!",
-                "Meesa proposing a conceptual work of art to honor the Trade Federation.",
-                "Yousa bein' grossly nice, meesa tinks.",
-                "These are some nice-ah duds, ah-poopah!",
-                "/u/$username, look! Yousa not gonna believe it. Meesa all sparkly glowy! Now, weesa gonna have all the time to spend together! Yaaahh! Ah-hahhh!",
-                "Oh, but it 'tis. 'Tis demanded by the Gods, it 'tis.",
-                "Hello, boyos!",
-                "My tongue is fat. My tongue.. uh, wrench. Wrench! Where is da wrench? Oh, dare it is. Hey.. Uh-oh! Uh, Ani. I'm stuck. Ani!??",
-                "Heyo-dales, Cap'n /u/$username. Meesa back!",
-                "Dis is nutsen!",
-                "Uh, let's see. I'll take that one. Mm-hmm. Uh-oh. Exsqueeze me, are you done with that? That's really good."
-            ]
-        },
-        {
-            "pattern": "gungan",
-            "chance": 1,
-            "responses": [
-                "Desa nobody dare. The Gungan city is deserted. Some kinda fight, meesa tinks.",
-                "When in trouble Gungans go to sacred place.",
-                "Don't expict a wern welcome.",
-                "Isa Gungan waterproofing. Isa why weesa swim so good.",
-                "They say Risha Loo know ancient Gungan mystical power - mind over matter.",
-                "Weesa all don't look alike."
-            ]
-        },
-        {
-            "pattern": "tries it.?$",
-            "chance": 1,
-            "responses": [
-                "Hesa got all crispy fried.",
-                "What'sa happen to you? Yousa burn your face-AAAAHH! Ani-bo-bani! What'sa happen to you?!"
+                "Jar Jar? Whatsa Jar Jar, precious?",
+                "Theysa cursed us. Murderer theysa called meesa. Theysa cursed us, and drove meesa away. And weesa wept, Precious, weesa wept to be so alone.",
+                "Mustn't ask meesa, not it's business. Gollum, gollum.",
+                "Oh! Weesa knows! Weesa knows safe paths for hobbitses! Safe paths in the dark… SHUT UP!",
+                "Yes, precious, false! They will cheat you, hurt you, LIE.",
+                "Master is meesa friend.",
+                "/u/$username is meesa friend",
+                "Meesa not listening… Meesa not listening…",
+                "Yousa a liar and a thief. No.. Murderer!. GO AWAY! Go away? Where would yousa be without meesa, uh? Gollum, gollum...",
+                "_Smeagol... Why does he cry, Smeagol?_ Cruel men hurts us. Jar Jar tricksed us. _Of course he did. I told yousa hesa was tricksy. I told yousa he was false._",
+                "The rock and pool isa nice and cool... so juicy sweet! Meesa only wish [whack], to catch-a fish [whack], so juicy SWEET!",
+                "It was tricksy, precious. Very tricksy.",
+                "What did yousa call me? _(That was your name once, a long time ago. Wasn't it?)_ Meesa name... Ja... Jar Jar.",
+                "Jar Jar? No, no, Not poor Jar Jar. Jar Jar hates nasty elf bread.",
+                "Stupid, fat hobbitses!",
+                "It's-a clear desa hobbitses made a pact weesa desa Fellowship du Precious. Orcs, dellow felegates. In response to the direct threat to the Precious, meesa propose that Sauron gives immediately emergency powers to Smeagol. _Gollum, Gollum._",
+                "Wake up. Wake up. Wake up, sleepies. Weesa must go, yeeees, weeas must go at once.",
+                "What'sa taters, precious? What'sa taters, eh?",
+                "And theysa doesn't taste very nice, does theysa, Precious? No.. Not very nice at all, meesa love.",
+                "Oh yes we could. Spoilin' nice fish. Gives it to us raw and w-r-r-riggling; you keep nasty chips.",
+                "Stew the rabbits! Spoil beautiful meat Smeagol saved for you, poor hungry Smeagol.",
+                "Swamp, yes. Yes. Come master, weesa will take yosau on safe path through the mist. Meesa found it, meesa did. A way through the mashes. Orcs don’t use it. Orcs don’t know it. They go around, for miles and miles! Come quickly. Soft and swift as shadows, weesa must be.",
+                "_gollum, gollum_"
             ]
         }
     ]
