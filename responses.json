@@ -18,6 +18,14 @@
             ]
         },
         {
+            "pattern": "I am the Senate[.!]?$",
+            "chance": 1,
+            "responses": [
+                "Hiya Senate. Meesa Jar Jar Binks!"
+            ]
+        },
+
+        {
             "pattern": "met jar jar and boss nas[s][.!]?$",
             "chance": 1,
             "responses": [

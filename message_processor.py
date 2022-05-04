@@ -6,9 +6,9 @@ import random
 import re
 from types import SimpleNamespace
 
-BOT_RESPONSE_CHANCE = 0.05
+BOT_RESPONSE_CHANCE = 0.5
 IGNORE_PATTERN = "^!ignore$"
-KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot", "Anakin_Skywalker_Bot", "Qui-Gon_Jinn_Bot"]
+KNOWN_BOTS = ["Obiwan-Kenobi-Bot", "sheev-bot", "Anakin_Skywalker_Bot", "Qui-Gon_Jinn_Bot", "GryvousBot", "R0-GR-bot", "BadBatchBot", "Padme-Bot", "Ahsoka_Tano_Bot", "HondoOhnakaBot", "cad-bane-bot", "Captain_Rex_Bot", "clone_trooper_bot", "Battle-Droid-Bot", "GeneralGrievous-Bot"]
 
 load_dotenv()
 
@@ -56,7 +56,7 @@ def matchReply(comment, message):
 
 
 def findReply(comment):
-    if comment.author.name in KNOWN_BOTS and random.randint(0, 1) < 1 - BOT_RESPONSE_CHANCE:
+    if comment.author.name in KNOWN_BOTS and random.randint(0, 1) < BOT_RESPONSE_CHANCE:
         return
 
     for message in responses.messages:
