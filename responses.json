@@ -12,7 +12,7 @@
             "chance": 1,
             "responses": [
                 "No...no! Meesa stay...Meesa yous humble servaunt.",
-                "No...no! Meesa stay...Meesa yous humble servaunt, /u/$username.",
+                "No...no! Meesa stay...Meesa yous humble servaunt, $username.",
                 "Oyi, mooie-mooie!",
                 "How wude!"
             ]
@@ -22,6 +22,13 @@
             "chance": 1,
             "responses": [
                 "Hiya Senate. Meesa Jar Jar Binks!"
+            ]
+        },
+        {
+            "pattern": "into the escape pod",
+            "chance": 1,
+            "responses": [
+                "AHHEhh.. If this is escape, then where da pod?"
             ]
         },
 
@@ -43,7 +50,7 @@
             "pattern": "(Jar ?-?Jar).*great to see you",
             "chance": 1,
             "responses": [
-                "Helloo /u/$username. Good en to see yousa too!"
+                "Helloo $username. Good en to see yousa too!"
             ]
         },
         {
@@ -114,7 +121,7 @@
             "pattern": "(Hi|Hello),? Jar Jar[.!]?$",
             "chance": 1,
             "responses": [
-                "/u/$username! Yiyiyiyiyiyi!!!"
+                "$username! Yiyiyiyiyiyi!!!"
             ]
         },
         {
@@ -178,16 +185,16 @@
                 "Gungans no die'n without a fight.... Weesa warriors. Weesa gotta grand army. Dat why you no liken us, metinks.",
                 "Meesa, Your Highness?",
                 "It's-a clear desa separatists made a pact weesa desa Federation du Trade. Senators, dellow felegates. In response to the direct threat to the Republic, meesa propose that da Senate gives immediately emergency powers to da Supreme Chancellor.",
-                "Senators, rellow fedditors. In response to da direct threat to /r/PrequelMemes, meesa propose that da mods gives immediately emergency powers to /u/$username!",
+                "Senators, rellow fedditors. In response to da direct threat to /r/PrequelMemes, meesa propose that da mods gives immediately emergency powers to $username!",
                 "Meesa called Jar Jar Binks, meesa your humble servant!",
                 "Oh yousa no creating life. Yousa taking life.",
                 "Tis embarrassing, but, uh my afraid my've been banished. My forgotten, da bosses would do terrible tings to me. Terrible tings to me if me goen back dare.",
                 "Meesa just sharing my Gungan art with yousa and meesa.",
-                "Meesa won't let you down, /u/$username.",
-                "Careful, /u/$username. Careful!",
+                "Meesa won't let you down, $username.",
+                "Careful, $username. Careful!",
                 "Thosen with good in their heart always passen too soon.",
-                "Helloo /u/$username. Good en to see yousa.",
-                "Meesa busten wit happiness seein Yousa again, /u/$username. Deesa bad times, bombad times.",
+                "Helloo $username. Good en to see yousa.",
+                "Meesa busten wit happiness seein Yousa again, $username. Deesa bad times, bombad times.",
                 "It's a longo tale-o, buta small part of it would be meesa clumsy.",
                 "Meesa caused mabbe one, two-y lettle bitty axadentes, huh?",
                 "Yousa need to do dat... dat ting... dat big troop ting.",
@@ -197,15 +204,15 @@
                 "Look meesa found a bang booma gun!",
                 "Wait. Meesa eyeball's stuck in the sleeve.",
                 "Millions will be starvin' and dyin' without your help.",
-                "Hi-lo! Let meesa through! Meesa on a diplomatic mission. /u/$username ! It's a pleasure to be seeing yousa!",
+                "Hi-lo! Let meesa through! Meesa on a diplomatic mission. $username ! It's a pleasure to be seeing yousa!",
                 "Meesa proposing a conceptual work of art to honor the Trade Federation.",
                 "Yousa bein' grossly nice, meesa tinks.",
                 "These are some nice-ah duds, ah-poopah!",
-                "/u/$username, look! Yousa not gonna believe it. Meesa all sparkly glowy! Now, weesa gonna have all the time to spend together! Yaaahh! Ah-hahhh!",
+                "$username, look! Yousa not gonna believe it. Meesa all sparkly glowy! Now, weesa gonna have all the time to spend together! Yaaahh! Ah-hahhh!",
                 "Oh, but it 'tis. 'Tis demanded by the Gods, it 'tis.",
                 "Hello, boyos!",
                 "My tongue is fat. My tongue.. uh, wrench. Wrench! Where is da wrench? Oh, dare it is. Hey.. Uh-oh! Uh, Ani. I'm stuck. Ani!??",
-                "Heyo-dales, Cap'n /u/$username. Meesa back!",
+                "Heyo-dales, Cap'n $username. Meesa back!",
                 "Dis is nutsen!",
                 "Uh, let's see. I'll take that one. Mm-hmm. Uh-oh. Exsqueeze me, are you done with that? That's really good."
             ]

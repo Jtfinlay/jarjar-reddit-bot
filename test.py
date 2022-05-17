@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 from types import SimpleNamespace
 import unittest
 
-from message_processor import checkForIgnoreCommand, hasBotReplied, extractReply
+from message_processor import checkForIgnoreCommand, hasBotReplied, hasOtherBotReplied, extractReply
 
 load_dotenv()
 
@@ -62,6 +62,21 @@ class TestMessageProcessor(unittest.TestCase):
         })
 
         self.assertTrue(hasBotReplied(comment))
+
+    def test_correctly_find_when_another_bot_replied(self):
+        comment = CommentStub(**{
+            'author': SimpleNamespace(**{ 'name': 'user123' }),
+            'body': 'hi hi',
+            'replies':
+                RepliesStub(**{
+                    '_replies': [CommentStub(**{
+                        'author': SimpleNamespace(**{'name': 'Obiwan-Kenobi-Bot'}),
+                        'body': 'Meesa your humble servant!'
+                    })]
+                })
+        })
+
+        self.assertTrue(hasOtherBotReplied(comment))
     
     def test_correctly_responds_to_forgotten_prompt(self):
         comment = CommentStub(**{

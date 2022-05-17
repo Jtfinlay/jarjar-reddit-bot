@@ -6,7 +6,7 @@ import queue
 import threading
 import time
 
-from message_processor import checkForIgnoreCommand, hasBotReplied, extractReply
+from message_processor import checkForIgnoreCommand, hasBotReplied, hasOtherBotReplied, extractReply, hasOtherBotReplied
 
 REPLY_SLEEP_TIME_SEC = 60
 MAX_QUEUE_SIZE = 100
@@ -90,6 +90,11 @@ def consumer(queue, ignored_users):
             if (comment.author.name in ignored_users):
                 print(
                     stylize(f"Skipping ignored user (pull): {comment.author.name}", fg('red')))
+                continue
+
+            if hasOtherBotReplied(comment):
+                print(
+                    stylize(f"Another bot has already replied to: ${item.commentId}", fg('red')))
                 continue
 
             comment.reply(item.reply)
